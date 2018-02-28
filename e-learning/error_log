@@ -1,0 +1,3 @@
+[19-Dec-2017 23:09:03 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/admin/public_html/e-learning/application/views/guru/view_modul.php on line 39
+[19-Dec-2017 23:10:00 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/admin/public_html/e-learning/application/views/guru/view_modul.php on line 39
+[19-Dec-2017 23:11:17 UTC] PHP Fatal error:  Call to undefined method M_guru::get_count_file_modul() in /home/admin/public_html/e-learning/application/controllers/guru/Modul.php on line 26
