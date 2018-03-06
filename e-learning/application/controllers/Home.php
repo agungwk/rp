@@ -18,12 +18,28 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$idUser = $this->session->userdata('data')['id'];
-		$data = array(
-			'content' => 'main/dashboard',
-			'title'=>'Dashboard',
-			'href'=>'Dashboard',
-			'url_home'=>''
-			);
+
+		// tipe dashboard
+		if ($this->session->userdata('data')['type'] == "instruktur") {
+			$data = array(
+				'content' => 'main/dashboard_guru',
+				'title'=>'Dashboard',
+				'href'=>'Dashboard',
+				'url_home'=>''
+				);
+				$data['dashboardTransaksiGuru'] = $this->m_guru->dashboardTransaksiGuru($idUser)->result();
+				$data['totalTransaksiGuru'] = $this->m_guru->totalTransaksiGuru($idUser)->result();
+				$data['totalJmlTransaksiGuru'] = $this->m_guru->totalJmlTransaksiGuru($idUser)->result();
+				$data['totalModulGuru'] = $this->m_guru->totalModulGuru($idUser)->result();
+				$data['totalMuridGuru'] = $this->m_guru->totalMuridGuru($idUser)->result();
+		} else {
+			$data = array(
+				'content' => 'main/dashboard',
+				'title'=>'Dashboard',
+				'href'=>'Dashboard',
+				'url_home'=>''
+				);
+		}
 
 		//notif admin
 		$getNotifAdminGuru = $this->m_administrator->notifAdminGuru()->row();
@@ -66,6 +82,6 @@ class Home extends CI_Controller {
 			);
 
 		$this->load->view('main/home',$data);
-		
+
 	}
 }

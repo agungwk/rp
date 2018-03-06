@@ -1,6 +1,6 @@
 <h1>Welcome <?php echo $this->session->userdata('data')['nama']; ?></h1>
 <h3>
-	<?php 
+	<?php
 		if($this->session->userdata('data')['type'] == 'guru'){
 
 			if($this->session->userdata('data')['status'] == 0){

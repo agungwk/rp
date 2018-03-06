@@ -208,4 +208,56 @@ class M_guru extends CI_Model {
 		return $this->db->get();
 	}
 
+	// grafik transaksi guru per hari
+	public function dashboardTransaksiGuru($id) {
+		$this->db->select('sum(b.harga) as total_harga, date(t.tgl_verified) as tgl_verified, t.status_verf as status_verf');
+		$this->db->from('transaksi t');
+		$this->db->join('belajar b','t.id_belajar=b.id');
+		$this->db->where('b.id_guru',$id);
+		$this->db->where('t.tgl_verified is not null',NULL, FALSE);
+		$this->db->group_by('date(t.tgl_verified)');
+		$this->db->group_by('t.status_verf');
+		$this->db->order_by('t.tgl_verified','DESC');
+		$this->db->order_by('t.status_verf','DESC');
+		return $this->db->get();
+	}
+
+	// total transaksi
+	public function totalTransaksiGuru($id) {
+		$this->db->select('sum(b.harga) as total_harga');
+		$this->db->from('transaksi t');
+		$this->db->join('belajar b','t.id_belajar=b.id');
+		$this->db->where('b.id_guru',$id);
+		$this->db->where('t.tgl_verified is not null',NULL, FALSE);
+		$this->db->where('t.status_verf', 2);
+		return $this->db->get();
+	}
+
+	// total modul
+	public function totalModulGuru($id) {
+		$this->db->select('sum(m.id) as total_modul');
+		$this->db->from('modul m');
+		$this->db->where('m.id_guru',$id);
+		return $this->db->get();
+	}
+
+	// jumlah transaksi
+	public function totalJmlTransaksiGuru($id) {
+		$this->db->select('count(b.harga) as total_transaksi');
+		$this->db->from('transaksi t');
+		$this->db->join('belajar b','t.id_belajar=b.id');
+		$this->db->where('b.id_guru',$id);
+		$this->db->where('t.tgl_verified is not null',NULL, FALSE);
+		$this->db->where('t.status_verf', 2);
+		return $this->db->get();
+	}
+
+	// total murid
+	public function totalMuridGuru($id) {
+		$this->db->select('count(b.id) as total_murid');
+		$this->db->from('belajar b');
+		$this->db->where('b.id_guru',$id);
+		return $this->db->get();
+	}
+
 }

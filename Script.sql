@@ -1,0 +1,2 @@
+-- 1. query untuk dashboard transaksi guru
+select sum(b.harga) as total_harga, date(t.tgl_verified), t.status_verf from transaksi t inner join belajar b on t.id_belajar=b.id inner join guru g on b.id_guru=g.id where g.id=1 group by date(t.tgl_verified), t.status_verf order by t.tgl_verified desc 

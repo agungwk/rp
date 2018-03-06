@@ -19,7 +19,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/_all-skins.min.css">
   <!-- Morris chart -->
-  <!-- <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/morris.css"> -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/morris.css">
   <!-- jvectormap -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/jquery-jvectormap.css">
   <!-- Date Picker -->
@@ -33,6 +33,10 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <!-- jQuery 3 -->
+  <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="<?php echo base_url() ?>assets/js/jquery-ui.min.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -45,7 +49,7 @@
           }else{
 
       $urlImage = base_url()."assets/file/guru/".$this->session->userdata('data')['foto'];
-        }   
+        }
     }else{
       $urlImage = base_url()."assets/image/avatar5.png";
     }
@@ -59,7 +63,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>R</b>P</span>
       <!-- logo for regular state and mobile devices -->
-      
+
       <span class="logo-lg"><h4>Rumah Pengembangan</h4></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
@@ -91,7 +95,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <?php 
+                  <?php
                     $id_session = $this->session->userdata('data')['id'];
                     $url = "murid/profile/data/".$id_session;
                     if($this->session->userdata('data')['type'] == "instruktur"){
@@ -106,7 +110,7 @@
 
                 </div>
                 <div class="pull-right">
-                  <?php 
+                  <?php
                     $url = "setup/login/log_out";
                     if($this->session->userdata('data')['type'] == "admin"){
                       $url = "admin/log_out";
@@ -164,11 +168,16 @@
                 <small class="label pull-right bg-yellow" title="Konfirmasi Transaksi"><?=$notif_admin_tx_clear ?></small>
               <?php } ?>
               </span>
-              
+
             </a>
           </li>
         <?php }elseif($this->session->userdata('data')['type'] == "instruktur"){ ?>
           <?php if($this->session->userdata('data')['status'] == 1){?>
+          <li>
+            <a href="<?php echo base_url() ?>">
+              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            </a>
+          </li>
           <li class="treeview">
             <a href="#">
               <i class="fa fa-table"></i> <span>Modul</span>
@@ -226,7 +235,7 @@
               <li><a href="<?php echo base_url() ?>murid/pelajaran"><i class="fa fa-circle-o"></i> <span>Pilih Instruktur</span></a></li>
               <li><a href="<?php echo base_url() ?>murid/belajar"><i class="fa fa-circle-o"></i> <span>Daftar Materi</span></a></li>
               <li><a href="<?php echo base_url() ?>murid/belajar/result"><i class="fa fa-circle-o"></i> <span>Hasil Materi</span></a></li>
-              
+
             </ul>
           </li>
           <li><a href="<?php echo base_url() ?>murid/verifikasi"><i class="fa fa-bank"></i> <span>Verifikasi</span>
@@ -236,7 +245,7 @@
               </span>
             <?php } ?>
           </a></li>
-        <?php } ?> 
+        <?php } ?>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -277,11 +286,6 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
-<!-- <script src="<?php echo base_url() ?>assets/js/morris.min.js"></script> -->
-<!-- jQuery UI 1.11.4 -->
-<script src="<?php echo base_url() ?>assets/js/jquery-ui.min.js"></script>
 
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
@@ -319,6 +323,7 @@
 <script src="<?php echo base_url() ?>assets/js/image-picker.min.js"></script>
 <script src="<?php echo base_url() ?>assets/js/dataTables.bootstrap.min.js"></script>
 <script src="<?php echo base_url() ?>assets/js/starr.js"></script>
+<script src="<?php echo base_url() ?>assets/js/morris.min.js"></script>
 <script>
   $(function () {
     $('#example1').DataTable();
