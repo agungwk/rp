@@ -32,13 +32,25 @@ class Home extends CI_Controller {
 				$data['totalJmlTransaksiGuru'] = $this->m_guru->totalJmlTransaksiGuru($idUser)->result();
 				$data['totalModulGuru'] = $this->m_guru->totalModulGuru($idUser)->result();
 				$data['totalMuridGuru'] = $this->m_guru->totalMuridGuru($idUser)->result();
-		} else {
+		} else if ($this->session->userdata('data')['type'] == "admin") {
 			$data = array(
-				'content' => 'main/dashboard',
+				'content' => 'main/dashboard_admin',
 				'title'=>'Dashboard',
 				'href'=>'Dashboard',
 				'url_home'=>''
 				);
+		} else {
+			$data = array(
+				'content' => 'main/dashboard_murid',
+				'title'=>'Dashboard',
+				'href'=>'Dashboard',
+				'url_home'=>''
+				);
+				$data['getTotalTransaksiMurid'] = $this->m_murid->getTotalTransaksiMurid($idUser);
+				$data['getTotalModulMurid'] = $this->m_murid->getTotalModulMurid($idUser);
+				$data['getTotalModulNilaiMurid'] = $this->m_murid->getTotalModulNilaiMurid($idUser);
+				$data['getRataNilaiMurid'] = $this->m_murid->getRataNilaiMurid($idUser);
+				$data['getJmlTransaksiMurid'] = $this->m_murid->getJmlTransaksiMurid($idUser);
 		}
 
 		//notif admin

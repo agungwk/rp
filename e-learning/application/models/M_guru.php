@@ -254,7 +254,7 @@ class M_guru extends CI_Model {
 
 	// total murid
 	public function totalMuridGuru($id) {
-		$this->db->select('count(b.id) as total_murid');
+		$this->db->select('count(distinct(b.id_murid)) as total_murid');
 		$this->db->from('belajar b');
 		$this->db->where('b.id_guru',$id);
 		return $this->db->get();

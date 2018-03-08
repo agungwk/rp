@@ -181,4 +181,59 @@ class M_murid extends CI_Model {
 		$this->db->where('belajar.id_murid',$id);
 		return $this->db->get();
 	}
+
+	// dashboard grafik total transaksi murid
+	public function getTotalTransaksiMurid($id) {
+		$this->db->select('date(b.created_at) as created_at, sum(case when (t.status_verf = 0) then b.harga else 0 end) as verf_0, sum(case when (t.status_verf = 1) then b.harga else 0 end) as verf_1, sum(case when (t.status_verf = 2) then b.harga else 0 end) as verf_2');
+		$this->db->from('transaksi t');
+		$this->db->join('belajar b','t.id_belajar=b.id');
+		$this->db->where('b.id_murid',$id);
+		$this->db->group_by('date(b.created_at)');
+		$this->db->order_by('b.id_murid','ASC');
+		$this->db->order_by('b.created_at','DESC');
+		$this->db->limit(20);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// dashboard total modul
+	public function getTotalModulMurid($id) {
+		$this->db->select('count(distinct(b.id_modul)) as total_modul');
+		$this->db->from('belajar b');
+		$this->db->where('b.id_murid',$id);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// dashboard total modul yang sudah dinilai
+	public function getTotalModulNilaiMurid($id) {
+		$this->db->select('count(distinct(b.id_modul)) as total_nilai');
+		$this->db->from('belajar b');
+		$this->db->where('b.id_murid',$id);
+		$this->db->where('b.nilai is not null',NULL, FALSE);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// dashboard rata-rata nilai
+	public function getRataNilaiMurid($id) {
+		$this->db->select('cast((sum(b.nilai) / count(distinct(b.id_modul))) as int) as rata_nilai');
+		$this->db->from('belajar b');
+		$this->db->where('b.id_murid',$id);
+		$this->db->where('b.nilai is not null',NULL, FALSE);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// dashboard total nominal transaksi berhasil
+	public function getJmlTransaksiMurid($id) {
+		$this->db->select('sum(b.harga) as total_harga');
+		$this->db->from('transaksi t');
+		$this->db->join('belajar b','t.id_belajar=b.id');
+		$this->db->where('b.id_murid',$id);
+		$this->db->where('t.status_verf',2);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 }
