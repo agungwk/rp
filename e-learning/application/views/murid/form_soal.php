@@ -60,6 +60,25 @@
                       </span>
                   </div>
                   <!-- /.user-block -->
+
+                  <?php if ($value->tipe_soal == 'true_false') { ?>
+                  <p>
+                    <div class="form-group">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="jawaban<?=$no; ?>" value="T">True
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="jawaban<?=$no; ?>" value="F">False
+                          </label>
+                        </div>
+                      </div>
+                  </p>
+                  <?php } else { ?>
                   <p>
                       <div class="form-group">
                         <div class="radio">
@@ -97,6 +116,7 @@
                         </div>
                       </div>
                   </p>
+                  <?php } ?>
                 </div>
                 <?php $no++; } ?>
                 <hr>

@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
--- Host: localhost:3306
--- Generation Time: Feb 28, 2018 at 01:58 AM
--- Server version: 5.6.38
--- PHP Version: 5.6.30
+-- Host: 127.0.0.1
+-- Generation Time: Mar 22, 2018 at 06:52 PM
+-- Server version: 10.1.10-MariaDB
+-- PHP Version: 7.0.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -187,7 +185,9 @@ INSERT INTO `belajar` (`id`, `id_murid`, `id_guru`, `id_modul`, `harga`, `nilai`
 (121, 6, 5, 14, '125000', NULL, '2018-02-22 10:09:22'),
 (122, 6, 1, 1, '150000', NULL, '2018-02-27 05:49:32'),
 (123, 6, 1, 1, '150000', '80', '2018-02-27 07:56:07'),
-(124, 6, 3, 7, '350000', NULL, '2018-02-27 08:38:52');
+(124, 6, 3, 7, '350000', NULL, '2018-02-27 08:38:52'),
+(125, 1, 1, 2, '100000', '100', '2018-03-22 22:57:55'),
+(126, 1, 1, 1, '150000', '60', '2018-03-23 00:38:58');
 
 -- --------------------------------------------------------
 
@@ -267,7 +267,7 @@ CREATE TABLE `guru` (
 --
 
 INSERT INTO `guru` (`id`, `nama`, `email`, `telp`, `password`, `tgl_lahir`, `pengalaman`, `deskripsi`, `foto`, `file`, `ttd`, `skype`, `status`, `created_at`) VALUES
-(1, 'Budi', 'budi@gmail.com', '086573647583', '123', '2017-12-21', 'saya pernah ini', 'saya ini adalah', 'adr.jpg', 'php-7_1_8-nts-Win32-VC14-x64.zip', '5pilar.jpg', 'budi', 1, '2017-12-20 05:58:40'),
+(1, 'Ananda Dwi Rahma', 'nanda@gmail.com', '086573647583', '202cb962ac59075b964b07152d234b70', '2017-12-21', 'saya pernah ini', 'saya ini adalah', 'adr.jpg', 'php-7_1_8-nts-Win32-VC14-x64.zip', '5pilar.jpg', 'budi', 1, '2017-12-20 05:58:40'),
 (2, 'Virza', 'andreas.donny29@gmail.com', '085656565656', '1', '2017-12-20', 'sangat banget', 'kurang lebih begitulah', 'Za.jpg', 'easid.zip', 'ijasah.jpg', 'donny andreas', 1, '2017-12-20 13:02:53'),
 (3, 'febri', 'febri@tsicertification.co.id', '0875515132', '123', '1995-01-03', 'Saya pernah bekerja di Kementrian Hukum dan HAM Indonesia', 'Mandiri 128000121265 a/n Febriyanti Maulani', 'img_bg_11.jpg', 'Ijasah.zip', 'contoh-001.jpg', 'febri03', 1, '2017-12-27 04:08:31'),
 (4, 'Jhony Andrean', 'andreasdonnyariyanto@gmail.com', '08545454556', '1', '1995-01-15', 'Bekerja sebagai trainer di semua pengurus', 'BCA 8800565122 a/n Jhony Andrean', 'img_bg_7.jpg', 'manage-user-bootstrap.zip', 'contoh-001.jpg', '', 1, '2018-01-15 07:24:59'),
@@ -278,7 +278,8 @@ INSERT INTO `guru` (`id`, `nama`, `email`, `telp`, `password`, `tgl_lahir`, `pen
 (9, 'Donny Andreas', 'andriefris@gmail.com', '08561210733', '2829', '1980-02-12', 'Mengajar di tempat kursus', 'BCA 8800908842 a/n Andreas Donny Ariyanto', 'WhatsApp_Image_2018-01-23_at_13_23_43.jpeg', 'CV.zip', 'Lima_Pilar_Management_(2).png', 'donny andreas', 1, '2018-01-23 04:00:46'),
 (10, 'vaisal', 'vaisalreksi@gmail.com', '0868768687', '1', '2018-01-25', 'tes', 'tes', 'male-user-silhouette_318-35708.jpg', 'thor-ragnarok-thor-ragnark_indonesian-1657682.zip', NULL, NULL, 1, '2018-01-24 04:43:19'),
 (11, 'Susmoyo Adim', 'susmoyoadim@gmail.com', '08456547875', '1', '1995-02-04', 'Sebagai Dosen Universitas Mercubuana', 'BCA 5154546545 a/n Susmoyo Adim', 'images-p3.jpg', 'CV.zip', 'Lima_Pilar_Management_(2).jpg', NULL, 1, '2018-01-24 06:35:15'),
-(12, 'daniel alexander pangkey', 'pangkeyd@gmail.com', '081386293152', 'boteng123!#', '2018-02-15', 'yhhh', 'bni ghhg 676788767', 'Untitled.png', '012bb1e6-e857-40b5-8d80-4895985e9a8f.rar', '012bb1e6-e857-40b5-8d80-4895985e9a8f.pdf', NULL, 1, '2018-02-15 10:33:58');
+(12, 'daniel alexander pangkey', 'pangkeyd@gmail.com', '081386293152', 'boteng123!#', '2018-02-15', 'yhhh', 'bni ghhg 676788767', 'Untitled.png', '012bb1e6-e857-40b5-8d80-4895985e9a8f.rar', '012bb1e6-e857-40b5-8d80-4895985e9a8f.pdf', NULL, 1, '2018-02-15 10:33:58'),
+(13, 'Andi Ryan', 'andi@gmail.com', '123456', '202cb962ac59075b964b07152d234b70', '0000-00-00', '', '', NULL, NULL, NULL, NULL, 0, '2018-03-23 00:28:06');
 
 -- --------------------------------------------------------
 
@@ -338,7 +339,7 @@ CREATE TABLE `murid` (
 --
 
 INSERT INTO `murid` (`id`, `nama`, `email`, `telp`, `password`, `created_at`, `foto`) VALUES
-(1, 'puspa adam', 'puspa@gmail.com', '0878765654', '123', '2017-11-26 17:35:31', NULL),
+(1, 'Firdha Imamah', 'fifi@gmail.com', '0878765654', '202cb962ac59075b964b07152d234b70', '2017-11-26 17:35:31', NULL),
 (2, 'andre29', 'andreas.donny29@gmail.com', '08787878787', 'GXPsjpbH', '2017-11-27 10:46:41', 'images6.jpg'),
 (3, 'donny29', 'andriefris@gmail.com', '08136666666', '1', '2017-11-27 13:23:38', NULL),
 (4, 'Adit', 'andrienbata@gmail.com', '086766568', 'tpMJMvhB', '2017-11-27 21:25:01', 'IMG-20171201-WA0034.jpg'),
@@ -355,7 +356,8 @@ INSERT INTO `murid` (`id`, `nama`, `email`, `telp`, `password`, `created_at`, `f
 (15, 'Arie Hanggara', 'arie@gmail.com', '08564585465', '1', '2018-01-19 07:00:31', 'images-p2.jpg'),
 (16, 'Bambang Wahyudi', 'bwahyudi@gmail.com', '085775952797', 'jembawan16', '2018-01-23 01:27:42', NULL),
 (17, 'vaisal', 'vaisalreksi@gmail.com', '07823678', '1', '2018-01-24 06:19:40', 'avatar-2024924_960_720.png'),
-(18, 'daniel alexander pangkey', 'pangkeyd@gmail.com', '081386293152', 'boteng123!#', '2018-02-14 10:14:40', NULL);
+(18, 'daniel alexander pangkey', 'pangkeyd@gmail.com', '081386293152', 'boteng123!#', '2018-02-14 10:14:40', NULL),
+(19, 'Ade Eka', 'ade@gmail.com', '1234567', '202cb962ac59075b964b07152d234b70', '2018-03-23 00:30:39', NULL);
 
 -- --------------------------------------------------------
 
@@ -372,114 +374,100 @@ CREATE TABLE `quiz` (
   `c` varchar(100) NOT NULL,
   `d` varchar(100) NOT NULL,
   `e` varchar(100) NOT NULL,
-  `benar` varchar(1) NOT NULL
+  `benar` varchar(1) NOT NULL,
+  `tipe_soal` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `quiz`
 --
 
-INSERT INTO `quiz` (`id`, `id_modul`, `soal`, `a`, `b`, `c`, `d`, `e`, `benar`) VALUES
-(1, 2, 'Apa Rumus 1', 'a', 'b', 'c', 'd', 'e', 'A'),
-(2, 2, 'Apa Rumus 2', 'aa', 'bb', 'cc', 'dd', 'ee', 'B'),
-(3, 2, 'Apa Rumus 3', 'aaa', 'bbb', 'ccc', 'ddd', 'eee', 'C'),
-(4, 2, 'Apa Rumus 4', 'aaaa', 'bbbb', 'cccc', 'dddd', 'eeee', 'D'),
-(5, 2, 'Apa Rumus 5', 'aaaaa', 'bbbbb', 'ccccc', 'ddddd', 'eeeee', 'E'),
-(6, 1, 'how there  1', 'a', 'b', 'c', 'd', 'e', 'A'),
-(7, 1, 'how there 2', 'aa', 'bb', 'cc', 'dd', 'ee', 'B'),
-(8, 1, 'how there 3', 'aaa', 'bbb', 'ccc', 'ddd', 'eee', 'C'),
-(9, 1, 'how there 4', 'aaaa', 'bbbb', 'cccc', 'dddd', 'eeee', 'D'),
-(10, 1, 'how there 5', 'aaaa', 'bbbbbb', 'ccccc', 'ddddd', 'eeeee', 'E'),
-(11, 2, 'Apa rumus segitiga 1', 'a', 'b', 'c', 'd', 'e', 'A'),
-(12, 2, 'Apa rumus segitiga 2', 'aa', 'bb', 'cc', 'dd', 'ee', 'B'),
-(13, 2, 'Apa rumus segitiga 3', 'aaa', 'bbb', 'ccc', 'ddd', 'eee', 'C'),
-(14, 2, 'Apa rumus segitiga 4', 'aaaa', 'bbbb', 'cccc', 'dddd', 'eeee', 'D'),
-(15, 2, 'Apa rumus segitiga 5', 'aaaaa', 'bbbb', 'ccccc', 'ddddd', 'eeeee', 'E'),
-(16, 1, 'makanan sehari hari', 'batu', 'pasir', 'nasi', 'kerikil', 'semen', 'C'),
-(17, 1, 'manusia bisa berdiri karena ada', 'tongkat', 'tulang', 'kayu', 'penyangga', 'tiang', 'B'),
-(18, 1, 'yang termasuk unggas', 'sapi', 'anjing', 'babi', 'ayam', 'orang utan', 'D'),
-(19, 1, '1 + 1 = ', '3', '6', '4', '2', '8', 'D'),
-(20, 1, 'salah satu hewan tidak bertulang belakang', 'ayam', 'sapi', 'gorila', 'kambing', 'laba laba', 'E'),
-(21, 1, '1', '1', '1', '1', '1', '1', 'A'),
-(22, 1, '2', '2', '2', '2', '2', '2', 'B'),
-(23, 1, '3', '3', '3', '3', '3', '3', 'C'),
-(24, 1, '4', '4', '4', '4', '4', '4', 'D'),
-(25, 1, '5', '5', '5', '5', '5', '5', 'E'),
-(26, 3, '1', '1', '2', '3', '4', '5', 'A'),
-(27, 3, '2', '1', '2', '3', '4', '5', 'B'),
-(28, 3, '3', '1', '2', '3', '4', '5', 'C'),
-(29, 3, '4', '1', '2', '3', '4', '5', 'D'),
-(30, 3, '5', '1', '2', '3', '4', '5', 'E'),
-(31, 4, '1', '1\r\n', '2', '3', '4', '5', 'A'),
-(32, 4, '2', '1', '2', '3', '4', '5', 'B'),
-(33, 4, '3', '1', '2', '3', '4', '5', 'C'),
-(34, 4, '4', '1', '2', '3', '4', '5', 'D'),
-(35, 4, '5', '1', '2', '3', '4', '5', 'E'),
-(36, 5, '1', '1', '2', '3', '4', '5', 'A'),
-(37, 5, '2', '1', '2', '3', '4', '5', 'B'),
-(38, 5, '3', '1', '2', '3', '4', '5', 'C'),
-(39, 5, '4', '1', '2', '3', '4', '5', 'D'),
-(40, 5, '5', '1', '2', '3', '4', '5', 'E'),
-(41, 6, '1', '1', '2', '3', '4', '5', 'A'),
-(42, 6, '2', '1', '2', '3', '4', '5', 'B'),
-(43, 6, '3', '1', '2', '3', '4', '5', 'C'),
-(44, 6, '4', '1', '2', '3', '4', '5', 'D'),
-(45, 6, '5', '1', '2', '3', '4', '5', 'E'),
-(46, 7, '1', '1', '2', '3', '4', '5', 'A'),
-(47, 7, '2', '1', '2', '3', '4', '5', 'B'),
-(48, 7, '3', '1', '2', '3', '4', '5', 'C'),
-(49, 7, '4', '1', '2', '3', '4', '5', 'D'),
-(50, 7, '5', '1', '2', '3', '4', '5', 'E'),
-(51, 8, '1', '1', '2', '3', '4', '5', 'A'),
-(52, 8, '2', '1', '2', '3', '4', '5', 'B'),
-(53, 8, '3', '1', '2', '3', '4', '5', 'C'),
-(54, 8, '4', '1', '2', '3', '4', '5', 'D'),
-(55, 8, '5', '1', '2', '3', '4', '5', 'E'),
-(56, 9, '1', '1', '2', '3', '4', '5', 'A'),
-(57, 9, '2', '1', '2', '3', '4', '5', 'B'),
-(58, 9, '3', '1', '2', '3', '4', '5', 'C'),
-(59, 9, '4', '1', '2', '3', '4', '5', 'D'),
-(60, 9, '5', '1', '2', '3', '4', '5', 'E'),
-(61, 10, '1', '1', '2', '3', '4', '5', 'A'),
-(62, 10, '2', '1', '2', '3', '4', '5', 'B'),
-(63, 10, '3', '1', '2', '3', '4', '5', 'C'),
-(64, 10, '4', '1', '2', '3', '4', '5', 'D'),
-(65, 10, '5', '1', '2', '3', '4', '5', 'E'),
-(66, 11, '1', '1', '2', '3', '4', '5', 'A'),
-(67, 11, '2', '1', '2', '3', '4', '5', 'B'),
-(68, 11, '3', '1', '2', '3', '4', '5', 'C'),
-(69, 11, '4', '1', '2', '3', '4', '5', 'D'),
-(70, 11, '6', '1', '2', '3', '4', '5', 'E'),
-(71, 12, 'Pernyataan :  Kata “ analisa “ dan “evaluasi” adalah sama', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'B'),
-(72, 12, 'Pernyataan :  Top Managemen harus memastikan keefektifan system manajemen mutu', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'B'),
-(73, 12, 'Pernyataan :  Ketika menentukan lingkup,   salah satunya organisasi harus mempertimbangkan produk dan jasa  ', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'A'),
-(74, 12, 'Pernyataan : Sistem manajemen mutu organisasi harus mencakup salah satunya  informasi terdokumentasi  yang diperlukan oleh persyaratan  ISO 9001:2015', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'A'),
-(75, 12, 'Pernyataan :  Audit internal dilakukan secara rutin setiap 6 bulan', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'A'),
-(76, 14, 'bener', 'Bener', 'salah', 't', 't', 't', 'A'),
-(77, 14, 'salah', 'bener', 'salah', 't', 't', 't', 'B'),
-(78, 14, 'salah', 'bener', 'salah', 't', 't', 't', 'B'),
-(79, 14, 'bener', 'bener', 'salah', 't', 't', 't', 'A'),
-(80, 14, 'salah', 'bener', 'salah', 't', 't', 't', 'B'),
-(81, 15, 'Pertama Install apa yg harus di perhatikan', 'CD Rom', 'USB', 'Operating System W2k8', 'Operating W2k', 'Jaringan Internet', 'C'),
-(82, 15, 'Minimal RAM dari PC yang sesuai dengan W2k8', '512MB', '256MB', '128MB', '1GB', '2GB', 'D'),
-(83, 15, 'Sebelum hadir W2k8 adalah Operating System', 'W2k12', 'W2k8', 'W2k', 'W2k9', 'W2k, W2k3 dan W2k8', 'E'),
-(84, 15, 'Tampilan W2k8 hampir seperti', 'Win 2k', 'Win XP', 'Win XP Pro', 'Win Vista', 'Win 8', 'E'),
-(85, 15, 'Setelah install W2k8 apa yang harus dilakukan', 'Seting DHCP', 'Seting DNS', 'Seting IP', 'Active Drirectories', 'DCPROMO', 'E'),
-(86, 16, 'Angka 1', '1', '2', '3', '4', '5', 'A'),
-(87, 16, 'Angka 2', '1', '2', '3', '4', '5', 'B'),
-(88, 16, 'Angka 3', '1', '2', '3', '4', '5', 'C'),
-(89, 16, 'Angka 4', '1', '2', '3', '4', '5', 'D'),
-(90, 16, 'Angka 5', '1', '2', '3', '4', '5', 'E'),
-(91, 17, '1', '1', '2', '3', '4', '5', 'A'),
-(92, 17, '2', '1', '2', '3', '4', '5', 'B'),
-(93, 17, '3', '1', '2', '3', '4', '5', 'C'),
-(94, 17, '4', '1', '2', '3', '4', '5', 'D'),
-(95, 17, '5', '1', '2', '3', '4', '5', 'E'),
-(96, 18, '1', '1', '1', '1', '1', '1', 'A'),
-(97, 18, '1', '1', '1', '1', '1', '1', 'A'),
-(98, 18, '1', '1', '1', '1', '1', '1', 'A'),
-(99, 18, '1', '1', '1', '1', '1', '1', 'A'),
-(100, 18, '1', '1', '1', '1', '1', '1', 'A');
+INSERT INTO `quiz` (`id`, `id_modul`, `soal`, `a`, `b`, `c`, `d`, `e`, `benar`, `tipe_soal`) VALUES
+(26, 3, '1', '1', '2', '3', '4', '5', 'A', ''),
+(27, 3, '2', '1', '2', '3', '4', '5', 'B', ''),
+(28, 3, '3', '1', '2', '3', '4', '5', 'C', ''),
+(29, 3, '4', '1', '2', '3', '4', '5', 'D', ''),
+(30, 3, '5', '1', '2', '3', '4', '5', 'E', ''),
+(31, 4, '1', '1\r\n', '2', '3', '4', '5', 'A', ''),
+(32, 4, '2', '1', '2', '3', '4', '5', 'B', ''),
+(33, 4, '3', '1', '2', '3', '4', '5', 'C', ''),
+(34, 4, '4', '1', '2', '3', '4', '5', 'D', ''),
+(35, 4, '5', '1', '2', '3', '4', '5', 'E', ''),
+(36, 5, '1', '1', '2', '3', '4', '5', 'A', ''),
+(37, 5, '2', '1', '2', '3', '4', '5', 'B', ''),
+(38, 5, '3', '1', '2', '3', '4', '5', 'C', ''),
+(39, 5, '4', '1', '2', '3', '4', '5', 'D', ''),
+(40, 5, '5', '1', '2', '3', '4', '5', 'E', ''),
+(41, 6, '1', '1', '2', '3', '4', '5', 'A', ''),
+(42, 6, '2', '1', '2', '3', '4', '5', 'B', ''),
+(43, 6, '3', '1', '2', '3', '4', '5', 'C', ''),
+(44, 6, '4', '1', '2', '3', '4', '5', 'D', ''),
+(45, 6, '5', '1', '2', '3', '4', '5', 'E', ''),
+(46, 7, '1', '1', '2', '3', '4', '5', 'A', ''),
+(47, 7, '2', '1', '2', '3', '4', '5', 'B', ''),
+(48, 7, '3', '1', '2', '3', '4', '5', 'C', ''),
+(49, 7, '4', '1', '2', '3', '4', '5', 'D', ''),
+(50, 7, '5', '1', '2', '3', '4', '5', 'E', ''),
+(51, 8, '1', '1', '2', '3', '4', '5', 'A', ''),
+(52, 8, '2', '1', '2', '3', '4', '5', 'B', ''),
+(53, 8, '3', '1', '2', '3', '4', '5', 'C', ''),
+(54, 8, '4', '1', '2', '3', '4', '5', 'D', ''),
+(55, 8, '5', '1', '2', '3', '4', '5', 'E', ''),
+(56, 9, '1', '1', '2', '3', '4', '5', 'A', ''),
+(57, 9, '2', '1', '2', '3', '4', '5', 'B', ''),
+(58, 9, '3', '1', '2', '3', '4', '5', 'C', ''),
+(59, 9, '4', '1', '2', '3', '4', '5', 'D', ''),
+(60, 9, '5', '1', '2', '3', '4', '5', 'E', ''),
+(61, 10, '1', '1', '2', '3', '4', '5', 'A', ''),
+(62, 10, '2', '1', '2', '3', '4', '5', 'B', ''),
+(63, 10, '3', '1', '2', '3', '4', '5', 'C', ''),
+(64, 10, '4', '1', '2', '3', '4', '5', 'D', ''),
+(65, 10, '5', '1', '2', '3', '4', '5', 'E', ''),
+(66, 11, '1', '1', '2', '3', '4', '5', 'A', ''),
+(67, 11, '2', '1', '2', '3', '4', '5', 'B', ''),
+(68, 11, '3', '1', '2', '3', '4', '5', 'C', ''),
+(69, 11, '4', '1', '2', '3', '4', '5', 'D', ''),
+(70, 11, '6', '1', '2', '3', '4', '5', 'E', ''),
+(71, 12, 'Pernyataan :  Kata “ analisa “ dan “evaluasi” adalah sama', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'B', ''),
+(72, 12, 'Pernyataan :  Top Managemen harus memastikan keefektifan system manajemen mutu', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'B', ''),
+(73, 12, 'Pernyataan :  Ketika menentukan lingkup,   salah satunya organisasi harus mempertimbangkan produk dan jasa  ', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'A', ''),
+(74, 12, 'Pernyataan : Sistem manajemen mutu organisasi harus mencakup salah satunya  informasi terdokumentasi  yang diperlukan oleh persyaratan  ISO 9001:2015', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'A', ''),
+(75, 12, 'Pernyataan :  Audit internal dilakukan secara rutin setiap 6 bulan', 'Benar', 'Salah', 'Tidak relevan', 'Tidak relevan', 'Tidak relevan', 'A', ''),
+(76, 14, 'bener', 'Bener', 'salah', 't', 't', 't', 'A', ''),
+(77, 14, 'salah', 'bener', 'salah', 't', 't', 't', 'B', ''),
+(78, 14, 'salah', 'bener', 'salah', 't', 't', 't', 'B', ''),
+(79, 14, 'bener', 'bener', 'salah', 't', 't', 't', 'A', ''),
+(80, 14, 'salah', 'bener', 'salah', 't', 't', 't', 'B', ''),
+(81, 15, 'Pertama Install apa yg harus di perhatikan', 'CD Rom', 'USB', 'Operating System W2k8', 'Operating W2k', 'Jaringan Internet', 'C', ''),
+(82, 15, 'Minimal RAM dari PC yang sesuai dengan W2k8', '512MB', '256MB', '128MB', '1GB', '2GB', 'D', ''),
+(83, 15, 'Sebelum hadir W2k8 adalah Operating System', 'W2k12', 'W2k8', 'W2k', 'W2k9', 'W2k, W2k3 dan W2k8', 'E', ''),
+(84, 15, 'Tampilan W2k8 hampir seperti', 'Win 2k', 'Win XP', 'Win XP Pro', 'Win Vista', 'Win 8', 'E', ''),
+(85, 15, 'Setelah install W2k8 apa yang harus dilakukan', 'Seting DHCP', 'Seting DNS', 'Seting IP', 'Active Drirectories', 'DCPROMO', 'E', ''),
+(86, 16, 'Angka 1', '1', '2', '3', '4', '5', 'A', ''),
+(87, 16, 'Angka 2', '1', '2', '3', '4', '5', 'B', ''),
+(88, 16, 'Angka 3', '1', '2', '3', '4', '5', 'C', ''),
+(89, 16, 'Angka 4', '1', '2', '3', '4', '5', 'D', ''),
+(90, 16, 'Angka 5', '1', '2', '3', '4', '5', 'E', ''),
+(91, 17, '1', '1', '2', '3', '4', '5', 'A', ''),
+(92, 17, '2', '1', '2', '3', '4', '5', 'B', ''),
+(93, 17, '3', '1', '2', '3', '4', '5', 'C', ''),
+(94, 17, '4', '1', '2', '3', '4', '5', 'D', ''),
+(95, 17, '5', '1', '2', '3', '4', '5', 'E', ''),
+(96, 18, '1', '1', '1', '1', '1', '1', 'A', ''),
+(97, 18, '1', '1', '1', '1', '1', '1', 'A', ''),
+(98, 18, '1', '1', '1', '1', '1', '1', 'A', ''),
+(99, 18, '1', '1', '1', '1', '1', '1', 'A', ''),
+(100, 18, '1', '1', '1', '1', '1', '1', 'A', ''),
+(136, 2, 'T51', 'A1', 'B1', 'C1', 'D1', 'E1', 'D', 'pilihan_ganda'),
+(137, 2, 'T52', '', '', '', '', '', 'T', 'true_false'),
+(138, 2, 'T53', '', '', '', '', '', 'F', 'true_false'),
+(139, 2, 'T54', '', '', '', '', '', 'T', 'true_false'),
+(140, 2, 'T55', '', '', '', '', '', 'F', 'true_false'),
+(141, 1, 'Past Tense 1', 'A1', 'B1', 'C1', 'D1', 'E1', 'A', 'pilihan_ganda'),
+(142, 1, 'Past Tense 2', '', '', '', '', '', 'T', 'true_false'),
+(143, 1, 'Past Tense 3', 'A3', 'B3', 'C3', 'D3', 'E3', 'E', 'pilihan_ganda'),
+(144, 1, 'Past Tense 4', '', '', '', '', '', 'F', 'true_false'),
+(145, 1, 'Past Tense 5', '', '', '', '', '', 'T', 'true_false');
 
 -- --------------------------------------------------------
 
@@ -671,7 +659,9 @@ INSERT INTO `transaksi` (`id`, `id_belajar`, `no_invoice`, `file`, `status_verf`
 (121, 121, 'INV-20180222100922', NULL, 1, 0, '2018-02-22 10:09:22', '2018-02-22 10:09:22', NULL, NULL),
 (122, 122, 'INV-20180227054932', NULL, 1, 0, '2018-02-27 05:49:32', '2018-02-27 05:49:32', NULL, NULL),
 (123, 123, 'INV-20180227075607', NULL, 2, 2, '2018-02-27 07:56:07', '2018-02-27 14:58:30', NULL, '2018-02-27 08:01:11'),
-(124, 124, 'INV-20180227083852', NULL, 1, 0, '2018-02-27 08:38:52', '2018-02-27 08:38:52', NULL, NULL);
+(124, 124, 'INV-20180227083852', NULL, 1, 0, '2018-02-27 08:38:52', '2018-02-27 08:38:52', NULL, NULL),
+(125, 125, 'INV-20180322165755', NULL, 2, 2, '2018-03-22 22:57:55', '2018-03-22 22:57:55', NULL, '2018-03-22 18:18:10'),
+(126, 126, 'INV-20180322183858', NULL, 2, 0, '2018-03-23 00:38:58', '2018-03-23 00:38:58', NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -751,55 +741,46 @@ ALTER TABLE `transaksi`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `belajar`
 --
 ALTER TABLE `belajar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 --
 -- AUTO_INCREMENT for table `file_modul`
 --
 ALTER TABLE `file_modul`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
-
 --
 -- AUTO_INCREMENT for table `guru`
 --
 ALTER TABLE `guru`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `modul`
 --
 ALTER TABLE `modul`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-
 --
 -- AUTO_INCREMENT for table `murid`
 --
 ALTER TABLE `murid`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `quiz`
 --
 ALTER TABLE `quiz`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
 --
 -- AUTO_INCREMENT for table `rating`
 --
 ALTER TABLE `rating`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
-
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 --
 -- Constraints for dumped tables
 --
@@ -809,7 +790,6 @@ ALTER TABLE `transaksi`
 --
 ALTER TABLE `quiz`
   ADD CONSTRAINT `FK_quiz_modul` FOREIGN KEY (`id_modul`) REFERENCES `modul` (`id`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
