@@ -40,6 +40,10 @@ class Home extends CI_Controller {
 				'href'=>'Dashboard',
 				'url_home'=>''
 				);
+				$data['getCountDataMurid'] = $this->m_administrator->getCountDataMurid();
+				$data['getCountDataGuru'] = $this->m_administrator->getCountDataGuru();
+				$data['totalTransaksi'] = $this->m_administrator->totalTransaksi();
+				$data['totalJmlTransaksi'] = $this->m_administrator->totalJmlTransaksi();
 		} else {
 			$data = array(
 				'content' => 'main/dashboard_murid',

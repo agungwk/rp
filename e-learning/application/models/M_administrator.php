@@ -59,4 +59,35 @@ class M_administrator extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+	// total data guru
+	public function getCountDataGuru() {
+		$this->db->select('count(m.id) as total_guru');
+		$this->db->from('guru m');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// total transaksi
+	public function totalTransaksi() {
+		$this->db->select('sum(b.harga) as total_harga');
+		$this->db->from('transaksi t');
+		$this->db->join('belajar b','t.id_belajar=b.id');
+		$this->db->where('t.tgl_verified is not null',NULL, FALSE);
+		$this->db->where('t.status_verf', 2);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// jumlah transaksi
+	public function totalJmlTransaksi() {
+		$this->db->select('count(b.harga) as total_transaksi');
+		$this->db->from('transaksi t');
+		$this->db->join('belajar b','t.id_belajar=b.id');
+		$this->db->where('t.tgl_verified is not null',NULL, FALSE);
+		$this->db->where('t.status_verf', 2);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 }

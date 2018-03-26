@@ -16,17 +16,17 @@ class Admin extends CI_Controller {
 
 	public function login()
 	{
-		$data = array('username'=>$this->input->post('email'),'password'=>$this->input->post('password'));
+		$data = array('username'=>$this->input->post('email'),'password'=>md5($this->input->post('password')));
 
 		$query = $this->m_elearning->getData($data,'admin');
 		if($query->num_rows() > 0){
 			foreach ($query->result() as $value) {
-				 $sessionArray['data'] = array('id'=>$value->id,                    
+				 $sessionArray['data'] = array('id'=>$value->id,
                                         'nama'=>$value->nama,
                                         'email'=>$value->username,
                                         'type'=>'admin',
                                     );
-                                    
+
                     $this->session->set_userdata($sessionArray);
                     redirect('home');
 			}
@@ -37,9 +37,9 @@ class Admin extends CI_Controller {
 
 				$this->session->set_flashdata("k", "<div class=\"$success alert-dismissible\">
                 <h4><i class=\"$icon\"></i> Alert!</h4>
-                $message 
+                $message
               </div>");
-				
+
 			redirect('admin');
 		}
 	}
@@ -48,6 +48,6 @@ class Admin extends CI_Controller {
 	{
 		$this->session->unset_userdata('data');
 		$this->session->sess_destroy();
-		redirect('admin','refresh'); 
+		redirect('admin','refresh');
 	}
 }
