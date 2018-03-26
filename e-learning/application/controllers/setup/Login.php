@@ -18,7 +18,7 @@ class Login extends CI_Controller {
 
 	public function login()
 	{
-		$data = array('email'=>$this->input->post('email'),'password'=>$this->input->post('password'));
+		$data = array('email'=>$this->input->post('email'),'password'=>md5($this->input->post('password')) );
 
 		if($this->input->post('type') == "member"){
 			$table = "murid";

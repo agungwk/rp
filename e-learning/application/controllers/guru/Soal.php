@@ -86,19 +86,36 @@ class Soal extends CI_Controller {
 
 		$input = array();
 		for ($i=1; $i <= $this->input->post('jumlah'); $i++) {
-			$data = array(
-				"id_modul" => $this->input->post('id_modul'),
-				"soal" => $this->input->post('soal'.$i),
-				"a" => $this->input->post('a'.$i),
-				"b" => $this->input->post('b'.$i),
-				"c" => $this->input->post('c'.$i),
-				"d" => $this->input->post('d'.$i),
-				"e" => $this->input->post('e'.$i),
-				"benar" => $this->input->post('benar'.$i),
-			);
-			array_push($input, $data);
 
-		}
+			if ($this->input->post('tipe_soal'.$i) == 'pilihan_ganda') {
+				$data = array(
+					"id_modul" => $this->input->post('id_modul'),
+					"soal" => $this->input->post('soal'.$i),
+					"tipe_soal" => 'pilihan_ganda',
+					"a" => $this->input->post('a'.$i),
+					"b" => $this->input->post('b'.$i),
+					"c" => $this->input->post('c'.$i),
+					"d" => $this->input->post('d'.$i),
+					"e" => $this->input->post('e'.$i),
+					"benar" => $this->input->post('benar'.$i),
+				);
+				array_push($input, $data);
+			} else {
+				$data = array(
+					"id_modul" => $this->input->post('id_modul'),
+					"soal" => $this->input->post('soal'.$i),
+					"tipe_soal" => 'true_false',
+					"a" => '',
+					"b" => '',
+					"c" => '',
+					"d" => '',
+					"e" => '',
+					"benar" => $this->input->post('benar'.$i),
+				);
+				array_push($input, $data);
+			}
+		}	
+			
 			$query = $this->db->insert_batch('quiz',$input);
 
 			if($query){

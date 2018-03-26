@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://rumahpengembangan.com/e-learning/';
-$config['base_url'] = 'http://localhost:8080/rp/e-learning/';
+$config['base_url'] = 'http://localhost/rp/e-learning/';
 
 /*
 |--------------------------------------------------------------------------

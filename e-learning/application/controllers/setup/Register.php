@@ -21,7 +21,7 @@ class Register extends CI_Controller {
 			"nama" => $this->input->post('nama'),
 			"email" => $this->input->post('email'),
 			"telp" => $this->input->post('telp'),
-			"password" => $this->input->post('password')
+			"password" => md5($this->input->post('password'))
 		);
 		if($this->input->post('type') == "murid"){
 			$table = "murid";
@@ -42,7 +42,7 @@ class Register extends CI_Controller {
               </div>");
 			redirect('setup/register');
 		}else{
-
+		
 		$query = $this->m_elearning->saveData($table,$data);
 		if($query){
 			$success = "alert alert-success";
