@@ -51,4 +51,12 @@ class M_administrator extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+	// total data murid
+	public function getCountDataMurid() {
+		$this->db->select('count(m.id) as total_murid');
+		$this->db->from('murid m');
+		$query = $this->db->get();
+		return $query->result();
+	}
 }

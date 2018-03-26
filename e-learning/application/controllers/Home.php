@@ -32,6 +32,7 @@ class Home extends CI_Controller {
 				$data['totalJmlTransaksiGuru'] = $this->m_guru->totalJmlTransaksiGuru($idUser)->result();
 				$data['totalModulGuru'] = $this->m_guru->totalModulGuru($idUser)->result();
 				$data['totalMuridGuru'] = $this->m_guru->totalMuridGuru($idUser)->result();
+				$data['totalModulPerMapelGuru'] = $this->m_guru->totalModulPerMapelGuru($idUser)->result();
 		} else if ($this->session->userdata('data')['type'] == "admin") {
 			$data = array(
 				'content' => 'main/dashboard_admin',

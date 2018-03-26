@@ -121,7 +121,7 @@ data      : <?php print_r(json_encode($getTotalTransaksiMurid)) ?>,
     xkey      : 'created_at',
     ykeys     : ['verf_0', 'verf_1', 'verf_2'],
     labels    : ['Verifikasi 0', 'Verifikasi 1', 'Verifikasi 2'],
-    lineColors: ['#a0d0e0', '#3c8dbc', '#4e7b96'],
+    // lineColors: ['#a0d0e0', '#3c8dbc', '#4e7b96'],
     hideHover : 'auto'
   });
 	$('.box ul.nav a').on('shown.bs.tab', function () {

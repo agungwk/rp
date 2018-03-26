@@ -105,7 +105,6 @@
       </div>
     </div>
     <!-- /.nav-tabs-custom -->
-
   </section>
 </div>
 <!-- <div class="row">
@@ -136,28 +135,19 @@
 
 <script type="text/javascript">
 $(function () {
-	var transactionsGraph = new Morris.Area({
+	var transactionsGraph = new Morris.Line({
     element   : 'revenue-chart',
     resize    : true,
     data      : <?php print_r(json_encode($dashboardTransaksiGuru)) ?>,
-    xkey      : 'tgl_verified',
-    ykeys     : ['total_harga'],
-    labels    : ['total_harga'],
-    lineColors: ['#a0d0e0', '#3c8dbc'],
+		xkey      : 'created_at',
+    ykeys     : ['verf_0', 'verf_1', 'verf_2'],
+    labels    : ['Verifikasi 0', 'Verifikasi 1', 'Verifikasi 2'],
     hideHover : 'auto'
   });
-	var modulGraph = new Morris.Area({
+	var modulGraph = new Morris.Donut({
     element   : 'modul-graph',
     resize    : true,
-    data      : [
-      { y: '2018-03-01', item1: 10},
-      { y: '2018-03-02', item1: 20},
-      { y: '2018-03-03', item1: 13}
-    ],
-    xkey      : 'y',
-    ykeys     : ['item1'],
-    labels    : ['total_harga'],
-    lineColors: ['#a0d0e0', '#3c8dbc'],
+    data      : <?php print_r(json_encode($totalModulPerMapelGuru)) ?>,
     hideHover : 'auto'
   });
 	var commentGraph = new Morris.Area({
