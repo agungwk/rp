@@ -8,8 +8,8 @@
 						<ul>
 							<li class="address">Jl. R.E. Martadinata Ciputat Blok B No.16, Pd. Cabe Udik, Pamulang, Kota Tangerang Selatan, Banten 15418</li>
 							<li class="phone"><a href="tel://+622122742550">+6221 2274 2550</a></li>
-							<li class="email"><a href="https://rumahpengembangan.com:2096/" target="_blank">info@rumahpengembangan.com</a></li>
-							<li class="url"><a href="http://rumahpengembangan.com/index.php" target="_blank">www.rumahpengembangan.com</a></li>
+							<li class="email"><a href="https://kauruh.id:2096/" target="_blank">info@kauruh.id</a></li>
+							<li class="url"><a href="http://kauruh.id/index.php" target="_blank">www.kauruh.id</a></li>
 						</ul>
 					</div>
 				</div>

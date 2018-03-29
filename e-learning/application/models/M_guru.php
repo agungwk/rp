@@ -234,7 +234,7 @@ class M_guru extends CI_Model {
 
 	// total modul
 	public function totalModulGuru($id) {
-		$this->db->select('sum(m.id) as total_modul');
+		$this->db->select('count(m.id) as total_modul');
 		$this->db->from('modul m');
 		$this->db->where('m.id_guru',$id);
 		return $this->db->get();

@@ -198,8 +198,12 @@ class M_murid extends CI_Model {
 
 	// dashboard total modul
 	public function getTotalModulMurid($id) {
-		$this->db->select('count(distinct(b.id_modul)) as total_modul');
+		$this->db->select('count(distinct(mo.id)) as total_modul');
 		$this->db->from('belajar b');
+		$this->db->join('modul mo','b.id_modul=mo.id');
+		$this->db->join('murid m','m.id=b.id_murid');
+		$this->db->join('transaksi t','t.id_belajar=b.id');
+		$this->db->where('t.status_verf > ',1);
 		$this->db->where('b.id_murid',$id);
 		$query = $this->db->get();
 		return $query->result();
@@ -217,7 +221,7 @@ class M_murid extends CI_Model {
 
 	// dashboard rata-rata nilai
 	public function getRataNilaiMurid($id) {
-		$this->db->select('cast((sum(b.nilai) / count(distinct(b.id_modul))) as int) as rata_nilai');
+		$this->db->select('cast((sum(b.nilai) / count(distinct(b.id_modul))) as UNSIGNED) as rata_nilai');
 		$this->db->from('belajar b');
 		$this->db->where('b.id_murid',$id);
 		$this->db->where('b.nilai is not null',NULL, FALSE);

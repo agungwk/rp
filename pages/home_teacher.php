@@ -1,10 +1,10 @@
     <div id="fh5co-staff">
 		<div class="container">
             <div class="text-center">
-                <h1><b>Para Instruktur Rumah Pengembangan</b></h1>
-					<p>Instruktur intruktur yang berada di Rumah Pengembangan sangat berkompeten dan memiliki modul modul materi yang sangat lengkap</p><br><hr>
+                <h1><b>Para Instruktur Kauruh</b></h1>
+					<p>Instruktur intruktur yang berada di Kauruh sangat berkompeten dan memiliki modul modul materi yang sangat lengkap</p><br><hr>
             </div>
-			<div class="row">      	
+			<div class="row">
 				<div class="col-md-3 text-center">
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(assets/theme_images/img_bg_5.jpg)">

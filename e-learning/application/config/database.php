@@ -96,7 +96,7 @@ $db['default'] = array(
 );
 // $db['default'] = array(
 // 	'dsn'	=> '',
-// 	'hostname' => 'rumahpengembangan.com',
+// 	'hostname' => 'kauruh.id',
 // 	'username' => 'admin',
 // 	'password' => 'L1m42016@',
 // 	'database' => 'admin_rp_01',

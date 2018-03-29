@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Rumah Pengembangan</title>
+  <title>Kauruh</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -84,7 +84,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <?php 
+                  <?php
                     $id_session = $this->session->userdata('data')['id'];
                     $url = "murid/profile/data/".$id_session;
                     if($this->session->userdata('data')['type'] == "instruktur"){
@@ -99,7 +99,7 @@
 
                 </div>
                 <div class="pull-right">
-                  <?php 
+                  <?php
                     $url = "setup/login/log_out";
                     if($this->session->userdata('data')['type'] == "admin"){
                       $url = "admin/log_out";
@@ -157,7 +157,7 @@
                 <small class="label pull-right bg-yellow" title="Konfirmasi Transaksi"><?=$notif_admin_tx_clear ?></small>
               <?php } ?>
               </span>
-              
+
             </a>
           </li>
         <?php }elseif($this->session->userdata('data')['type'] == "instruktur"){ ?>
@@ -202,9 +202,9 @@
           </li>
           <?php }?>
         <?php }else{ ?>
-          
-         
-        <?php } ?> 
+
+
+        <?php } ?>
       </ul>
     </section>
     <!-- /.sidebar -->

@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h1>Berbagai Macam Module Training Online Tersedia di Rumah Pengembangan Kami</h1>
+					<h1>Berbagai Macam Module Training Online Tersedia di Kauruh Kami</h1>
 					<p></p>
 				</div>
 			</div>
@@ -14,7 +14,7 @@
 						<div class="desc">
 							<h3><a href="#">Web Master</a></h3>
 							<p>Sebutan dari seorang yang ahli dalam dunia web. tugas webmaster biasanya adalah untuk memastikan bahwa server dan perangkat lunak yang beroperasi</p>
-							<span><a href="http://rumahpengembangan.com/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
+							<span><a href="http://kauruh.id/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
 						</div>
 					</div>
 				</div>
@@ -25,7 +25,7 @@
 						<div class="desc">
 							<h3><a href="#">Business &amp; Accounting</a></h3>
 							<p>Akunting merupakan suatu karir yang bertumbuh pesat dan disenangi orang pada saat ini. Pengusaha akan dapat mengetahui berapa banyak pajak harus dibayar</p>
-							<span><a href="http://rumahpengembangan.com/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
+							<span><a href="http://kauruh.id/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
 						</div>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 						<div class="desc">
 							<h3><a href="#">Science &amp; Technology</a></h3>
 							<p>Beberapa aspek ilmu pengetahuan, namun tidak satupun dari kita yang memberikan gambaran lengkap karena ilmu pengetahuan memiliki begitu banyak aspek</p>
-							<span><a href="http://rumahpengembangan.com/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
+							<span><a href="http://kauruh.id/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
 						</div>
 					</div>
 				</div>
@@ -47,7 +47,7 @@
 						<div class="desc">
 							<h3><a href="#">Health &amp; Psychology</a></h3>
 							<p>Dalam dunia psikologi telah tumbuh pemahaman baru yang berkembang dengan pesat, yaitu psikologi pertumbuhan atau health psychology (psikologi kesehatan)</p>
-							<span><a href="http://rumahpengembangan.com/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
+							<span><a href="http://kauruh.id/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
 						</div>
 					</div>
 				</div>
@@ -58,7 +58,7 @@
 						<div class="desc">
 							<h3><a href="#">Health, Safety &amp; Environment</a></h3>
 							<p>Suatu ilmu pengetahuan dan penerapannya dalam usaha mencegah kemungkinan terjadinya kecelakaan dan penyakit akibat kerja</p>
-							<span><a href="http://rumahpengembangan.com/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
+							<span><a href="http://kauruh.id/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
 						</div>
 					</div>
 				</div>
@@ -69,7 +69,7 @@
 						<div class="desc">
 							<h3><a href="#">Quality &amp; Assurance</a></h3>
 							<p>Mencakup monitoring, uji-tes, memeriksa proses produksi yang terlibat dalam suatu produk. Standar kualitas terpenuhi setiap komponen</p>
-							<span><a href="http://rumahpengembangan.com/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
+							<span><a href="http://kauruh.id/e-learning/setup/login" class="btn btn-primary btn-sm btn-course">Masuk Dan Daftar</a></span>
 						</div>
 					</div>
 				</div>

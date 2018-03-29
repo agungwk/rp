@@ -148,7 +148,7 @@
             callback(xmlHttp.responseText);
           }
         }
-        xmlHttp.open("post", "https://cae6a966.ngrok.io/rp/checkout.php");
+        xmlHttp.open("post", "http://localhost/rp/checkout.php");
         xmlHttp.send(JSON.stringify(requestBody));
       }
     </script>

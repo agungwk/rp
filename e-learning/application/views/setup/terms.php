@@ -16,25 +16,25 @@
         </div>
         <div class="box-body">
           <h3>A. DEFINISI :</h3>
-          
+
           <ol>
             <li>
-              <p>PT. Lima Pilar Manajemen adalah suatu perseroan terbatas yang menjalankan kegiatan usaha jasa web portal www.rumahpengembangan.com, yakni situs yang menyediakan layanan pelatihan untuk pengembangan diri.</p>
+              <p>PT. Lima Pilar Manajemen adalah suatu perseroan terbatas yang menjalankan kegiatan usaha jasa web portal www.kauruh.id, yakni situs yang menyediakan layanan pelatihan untuk pengembangan diri.</p>
             </li>
             <li>
-              <p>Situs rumah pengembangan adalah www. rumahpengembangan.com.</p>
+              <p>Situs Kauruh adalah www. kauruh.id.</p>
             </li>
             <li>
-              <p>Syarat & ketentuan adalah perjanjian antara Pengguna dan rumah pengembangan yang berisikan seperangkat peraturan yang mengatur hak, kewajiban, tanggung jawab pengguna dan Rumah pengembangan, serta tata cara penggunaan sistem layanan Rumahpengembangan.</p>
+              <p>Syarat & ketentuan adalah perjanjian antara Pengguna dan Kauruh yang berisikan seperangkat peraturan yang mengatur hak, kewajiban, tanggung jawab pengguna dan Kauruh, serta tata cara penggunaan sistem layanan Rumahpengembangan.</p>
             </li>
             <li>
-              <p>Pengguna adalah pihak yang menggunakan layanan Rumahpengembangan, termasuk namun tidak terbatas pada peserta training, trainer ataupun pihak lain yang sekedar berkunjung ke Situs Rumah pengembangan.</p>
+              <p>Pengguna adalah pihak yang menggunakan layanan Rumahpengembangan, termasuk namun tidak terbatas pada peserta training, trainer ataupun pihak lain yang sekedar berkunjung ke Situs Kauruh.</p>
             </li>
             <li>
-              <p>Peserta adalah Pengguna terdaftar yang melakukan pelatihan yang disediakan oleh trainer di Situs Rumah pengembangan.</p>
+              <p>Peserta adalah Pengguna terdaftar yang melakukan pelatihan yang disediakan oleh trainer di Situs Kauruh.</p>
             </li>
             <li>
-              <p>Trainer adalah Pengguna terdaftar yang menawarkan jasa pelatihan/training  kepada para Pengguna Situs Rumah pengembangan.</p>
+              <p>Trainer adalah Pengguna terdaftar yang menawarkan jasa pelatihan/training  kepada para Pengguna Situs Kauruh.</p>
             </li>
             <li>
               <p>Material adalah materi pelatihan yang berwujud video, power point presentation atau format lain yang ditentukan oleh rumahpengembangan   yang telah memenuhi kriteria rumahpengembangan dan ditampilkan dalam situs rumahpengembangan</p>
@@ -47,7 +47,7 @@
           <hr>
 
           <h3>B. AKUN,  PASSWORD DAN KEAMANAN :</h3>
-          
+
           <ol>
             <li>
               <p>Pengguna dengan ini menyatakan bahwa pengguna adalah orang yang cakap dan mampu untuk mengikatkan dirinya dalam sebuah perjanjian yang sah menurut hukum.</p>
@@ -93,13 +93,13 @@
             <li>
               <p>Pengguna dengan ini menyatakan bahwa Rumahpengembangan tidak bertanggung jawab atas kerugian atau kerusakan yang timbul dari penyalahgunaan akun Pengguna. </p>
             </li>
-            
+
           </ol>
-          
+
           <hr>
 
           <h3>C. TRANSAKSI  :</h3>
-          
+
           <ol>
             <li>
               <p>Pengguna wajib bertransaksi melalui prosedur transaksi yang telah ditetapkan oleh Rumahpengembangan. Peserta training  melakukan pembayaran dengan menggunakan metode pembayaran yang sebelumnya telah dipilih, dan kemudian Rumahpengembangan akan meneruskan dana ke pihak Trainer apabila tahapan transaksi jual beli pada sistem Rumahpengembangan telah selesai.</p>
@@ -151,11 +151,11 @@
               <p>Peserta memahami sepenuhnya dan menyetujui bahwa invoice yang diterbitkan adalah atas nama rumahpengembangan. </p>
             </li>
           </ol>
-          
+
           <hr>
-          
+
           <h3>E. TRANSAKSI  :</h3>
-          
+
           <ol>
             <li>
               <p>Trainer dilarang memanipulasi harga training  dengan tujuan apapun.</p>
@@ -182,11 +182,11 @@
               <p>Trainer memahami sepenuhnya dan menyetujui bahwa invoice yang diterbitkan adalah atas nama rumahpengembangan.</p>
             </li>
           </ol>
-          
+
           <hr>
-          
+
           <h3>G. KOMISI :</h3>
-          
+
           <ol>
             <li>
               <p>Hingga saat ini, Rumahpengembangan memberlakukan sistem komisi untuk setiap transaksi yang dilakukan melalui Rekening Resmi Rumahpengembangan.</p>
@@ -200,9 +200,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>H. HARGA :</h3>
-          
+
           <ol>
             <li>
               <p>Harga pelatihan yang terdapat dalam situs Rumahpengembangan adalah harga yang ditetapkan oleh Trainer. Trainer dilarang memanipulasi harga pelatihan dengan cara apapun.</p>
@@ -228,9 +228,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>J. KONTEN :</h3>
-          
+
           <ol>
             <li>
               <p>Dalam menggunakan setiap fitur dan/atau layanan Rumahpengembangan, Pengguna dilarang untuk mengunggah atau mempergunakan kata-kata, komentar, gambar, atau konten apapun yang mengandung unsur SARA, diskriminasi, merendahkan atau menyudutkan orang lain, vulgar, bersifat ancaman, atau hal-hal lain yang dapat dianggap tidak sesuai dengan nilai dan norma sosial. Rumahpengembangan berhak melakukan tindakan yang diperlukan atas pelanggaran ketentuan ini, antara lain penghapusan konten, pemblokiran akun, dan lain-lain.</p>
@@ -256,7 +256,7 @@
           </ol>
 
           <hr>
-          
+
           <h3>K. JENIS PELATIHAN :</h3>
             <ol>
                 <li>
@@ -266,9 +266,9 @@
                 </li>
             </ol>
           <hr>
-          
+
           <h3>M. KARTU KREDIT :</h3>
-          
+
           <ol>
             <li>
               <p>Pengguna dapat memilih untuk mempergunakan pilihan metode pembayaran menggunakan kartu kredit untuk transaksi pelatihan melalui Situs Rumahpengembangan.</p>
@@ -303,9 +303,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>P. PENARIKAN DANA :</h3>
-          
+
           <ol>
             <li>
               <p>Penarikan dana sesama bank akan diproses dalam waktu 1x24 jam hari kerja, sedangkan penarikan dana antar bank akan diproses dalam waktu 2x24 jam hari kerja.</p>
@@ -322,9 +322,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>R. KETENTUAN LAIN :</h3>
-          
+
           <ol>
             <li>
               <p>Segala hal yang belum dan/atau tidak diatur dalam syarat dan ketentuan khusus dalam fitur tersebut maka akan sepenuhnya merujuk pada syarat dan ketentuan Rumahpengembangan secara umum.</p>
@@ -332,9 +332,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>S. PENOLAKAN JAMINAN DAN BATASAN TANGGUNG JAWAB :</h3>
-          
+
           <ol>
             <li>
               <p>Rumahpengembangan adalah portal web dengan model Custumer to Customer Marketplace, yang menyediakan layanan kepada Pengguna untuk dapat menjadi Trainer maupun Peserta di website Rumahpengembangan. Dengan demikian transaksi yang terjadi adalah transaksi antar member Rumahpengembangan, sehingga Pengguna memahami bahwa batasan tanggung jawab Rumahpengembangan secara proporsional adalah sebagai penyedia jasa portal web
@@ -364,9 +364,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>T. PELEPASAN :</h3>
-          
+
           <ol>
             <li>
               <p>Jika Anda memiliki perselisihan dengan satu atau lebih pengguna, Anda melepaskan Rumahpengembangan (termasuk Induk Perusahaan, Direktur, dan karyawan) dari klaim dan tuntutan atas kerusakan dan kerugian (aktual dan tersirat) dari setiap jenis dan sifatnya , yang dikenal dan tidak dikenal, yang timbul dari atau dengan cara apapun berhubungan dengan sengketa tersebut. Dengan demikian maka Pengguna dengan sengaja melepaskan segala perlindungan hukum (yang terdapat dalam undang-undang atau peraturan hukum yang lain) yang akan membatasi cakupan ketentuan pelepasan ini.</p>
@@ -374,9 +374,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>U. GANTI RUGI :</h3>
-          
+
           <ol>
             <li>
               <p>Pengguna akan melepaskan Rumahpengembangan dari tuntutan ganti rugi dan menjaga Rumahpengembangan (termasuk Induk Perusahaan, direktur, dan karyawan) dari setiap klaim atau tuntutan, termasuk biaya hukum yang wajar, yang dilakukan oleh pihak ketiga yang timbul dalam hal Anda melanggar Perjanjian ini, penggunaan Layanan Rumahpengembangan yang tidak semestinya dan/ atau pelanggaran Anda terhadap hukum atau hak-hak pihak ketiga.</p>
@@ -384,9 +384,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>V. PILIHAN HUKUM :</h3>
-          
+
           <ol>
             <li>
               <p>Perjanjian ini akan diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia, tanpa memperhatikan pertentangan aturan hukum. Anda setuju bahwa tindakan hukum apapun atau sengketa yang mungkin timbul dari, berhubungan dengan, atau berada dalam cara apapun berhubungan dengan situs dan/atau Perjanjian ini akan diselesaikan secara eksklusif dalam yurisdiksi pengadilan Republik Indonesia.</p>
@@ -394,9 +394,9 @@
           </ol>
 
           <hr>
-          
+
           <h3>W. PEMBAHARUAN :</h3>
-          
+
           <ol>
             <li>
               <p>Syarat & ketentuan mungkin di ubah dan/atau diperbaharui dari waktu ke waktu tanpa pemberitahuan sebelumnya. Rumahpengembangan menyarankan agar anda membaca secara seksama dan memeriksa halaman Syarat & ketentuan ini dari waktu ke waktu untuk mengetahui perubahan apapun. Dengan tetap mengakses dan menggunakan layanan Rumahpengembangan, maka pengguna dianggap menyetujui perubahan-perubahan dalam Syarat & ketentuan.</p>
@@ -404,7 +404,7 @@
           </ol>
 
           <hr>
-          
+
         </div>
         <!-- /.box-body -->
         <div class="box-footer">

@@ -41,7 +41,7 @@
 							<span class="posted_on">March. 15th</span>
 							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div> 
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4">
@@ -52,7 +52,7 @@
 							<span class="posted_on">March. 15th</span>
 							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div> 
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4">
@@ -63,7 +63,7 @@
 							<span class="posted_on">March. 15th</span>
 							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div> 
+						</div>
 					</div>
 				</div>
 			</div>
@@ -76,7 +76,7 @@
 			<div class="col-md-8 col-md-offset-2 animate-box">
 				<div class="date-counter text-center">
 					<h2>Dapatkan Lebih dari 400 Module Training</h2>
-					<h3>Rumah Pengembangan e-Training</h3>
+					<h3>Kauruh e-Training</h3>
 					<div class="simply-countdown simply-countdown-one"></div>
 					<p><strong>Limited Offer, Hurry Up!</strong></p>
 					<p><a href="/lpm/system/index.php?param=signup" class="btn btn-primary btn-lg btn-reg">Masuk Dan Daftar</a></p>

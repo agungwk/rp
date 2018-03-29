@@ -1,6 +1,6 @@
 <div class="login-box">
   <div class="login-logo">
-    <a href="http://rumahpengembangan.com/index.php"><b><font face="Matura MT Script Capitals" color="black">Rumah Pengembangan</font></b></a>
+    <a href="http://kauruh.id/index.php"><b><font face="Matura MT Script Capitals" color="black">Kauruh</font></b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -14,9 +14,9 @@
     ?>
 
     <form action="<?php echo base_url().$url ?>" method="post">
-        
-      <?php 
-      if($role == 'user') { 
+
+      <?php
+      if($role == 'user') {
       ?>
       <div class="form-group">
         <div class="btn-group btn-group-justified">
@@ -46,8 +46,8 @@
         <!-- /.col -->
       </div>
     </form>
-  <?php 
-      if($role == 'user') { 
+  <?php
+      if($role == 'user') {
       ?>
     <a onclick="forgotPass()" href="javascript:void(0)" class="text-center">I forgot my password</a>
     <br>
@@ -72,4 +72,3 @@
     // window.location.href = base_url + 'setup/forgot?forgot_password=' + paramForgot;
   }
 </script>
-

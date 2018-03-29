@@ -14,7 +14,7 @@ class File_modul extends CI_Controller {
         $this->load->model('m_elearning');
         $this->load->model('m_guru');
 		$this->load->library('upload');
-        
+
     }
 
 	public function index()
@@ -62,6 +62,7 @@ class File_modul extends CI_Controller {
 
 	public function saveData()
 	{
+		$icon = '';
 		$config = array(
 			'upload_path' => "./assets/file/modul/",
 			'allowed_types' => "jpg|png|jpeg|pdf|mp4|mp3|avi",
@@ -87,7 +88,7 @@ class File_modul extends CI_Controller {
 				$success = "alert alert-danger";
 				$message = "Data failed to insert";
 				$icon = "icon fa fa-ban";
-			}	
+			}
 		}else{
 			$success = "alert alert-danger";
 			$message = $this->upload->display_errors();
@@ -95,7 +96,7 @@ class File_modul extends CI_Controller {
 
 		$this->session->set_flashdata("k", "<div class=\"$success alert-dismissible\">
                 <h4><i class=\"$icon\"></i> Alert!</h4>
-                $message 
+                $message
               </div>");
 		redirect('guru/file_modul');
 	}
@@ -125,7 +126,7 @@ class File_modul extends CI_Controller {
 	}
 
 	public function updateData()
-	{	
+	{
 		$param['id'] = $this->input->post('id');
 		if($_FILES['file']['name']!=""){
 			$config = array(
@@ -152,7 +153,7 @@ class File_modul extends CI_Controller {
 					$success = "alert alert-danger";
 					$message = "Data failed to update";
 					$icon = "icon fa fa-ban";
-				}	
+				}
 			}else{
 				$success = "alert alert-danger";
 				$message = $this->upload->display_errors();
@@ -171,12 +172,12 @@ class File_modul extends CI_Controller {
 				$success = "alert alert-danger";
 				$message = "Data failed to update";
 				$icon = "icon fa fa-ban";
-			}	
+			}
 		}
-		
+
 		$this->session->set_flashdata("k", "<div class=\"$success alert-dismissible\">
                 <h4><i class=\"$icon\"></i> Alert!</h4>
-                $message 
+                $message
               </div>");
 		redirect('guru/file_modul');
 	}
@@ -193,10 +194,10 @@ class File_modul extends CI_Controller {
 			$success = "alert alert-danger";
 			$message = "Data failed to deleted";
 			$icon = "icon fa fa-ban";
-		}	
+		}
 		$this->session->set_flashdata("k", "<div class=\"$success alert-dismissible\">
             <h4><i class=\"$icon\"></i> Alert!</h4>
-            $message 
+            $message
           </div>");
 		redirect('guru/file_modul');
 

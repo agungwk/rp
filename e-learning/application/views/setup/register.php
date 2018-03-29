@@ -1,7 +1,7 @@
 <div class="register-box">
   <?php echo $this->session->flashdata("k") ?>
   <div class="register-logo">
-    <a href="http://rumahpengembangan.com/index.php"><b><font face="Matura MT Script Capitals" color="black">Rumah Pengembangan</font></b></a>
+    <a href="http://kauruh.id/index.php"><b><font face="Matura MT Script Capitals" color="black">Kauruh</font></b></a>
   </div>
 
   <div class="register-box-body">

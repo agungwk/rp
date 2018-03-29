@@ -6,7 +6,7 @@ class Forgot extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('m_elearning');
-    	$this->load->library(array('email')); 
+    	$this->load->library(array('email'));
 
     }
 
@@ -22,9 +22,9 @@ class Forgot extends CI_Controller {
 		 $karakter .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'; // karakter alfabet
 		 $karakter .= '1234567890'; // karakter numerik
 		 $karakter .= '@#$^*()_+=/?'; // karakter simbol
-		 
+
 		 $string = '';
-		 for ($i=0; $i < $length; $i++) { 
+		 for ($i=0; $i < $length; $i++) {
 		  $pos = rand(0, strlen($karakter)-1);
 		  $string .= $karakter{$pos};
 		 }
@@ -67,14 +67,14 @@ class Forgot extends CI_Controller {
 
 					$this->session->set_flashdata("k", "<div class=\"$success alert-dismissible\">
 	                <h4><i class=\"$icon\"></i> Alert!</h4>
-	                $message 
+	                $message
 	              	</div>");
-	        	redirect('setup/login'); 
+	        	redirect('setup/login');
 				}else{
-	    			show_error($this->email->print_debugger());   
+	    			show_error($this->email->print_debugger());
 				}
 			}
-			
+
 		}else{
 			$success = "alert alert-danger";
 			$message = "Invalid email";
@@ -82,10 +82,10 @@ class Forgot extends CI_Controller {
 
 			$this->session->set_flashdata("k", "<div class=\"$success alert-dismissible\">
 	                <h4><i class=\"$icon\"></i> Alert!</h4>
-	                $message 
+	                $message
 	              	</div>");
 	        redirect('setup/forgot');
-		}	
+		}
 	}
 
 	public function send_email($to_email,$user,$newsPass)
@@ -103,8 +103,8 @@ class Forgot extends CI_Controller {
         $this->email->initialize($config);
 
         $this->email->from('limapilarmanajemen@gmail.com', 'New Password');
-	    $this->email->to($to_email); 
-	    $this->email->subject('New Password Account Rumah Pengembangan');
+	    $this->email->to($to_email);
+	    $this->email->subject('New Password Account Kauruh');
 	    $message_email = "<html>
 		    				<head></head>
 		    				<body><p>Hi, ".$user."</p>
