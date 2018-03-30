@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- [if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif] -->
+<!-- [if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif] -->
+<!-- [if IE 8]><html class="no-js lt-ie9"><![endif] -->
+<!-- [if gt IE 8]><!--><html class="no-js"><!--<![endif] -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rumah Pengembangan</title>
+    <!-- Meta Website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rumah Pengembangan">
+    <meta name="keywords" content="rumah, pengembangan">
+    <meta name="author" content="Rumah Pengembangan">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Pace -->
+    <link rel="stylesheet" type="text/css" href="plugins/pace/themes/blue/pace-theme-minimal.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- IE9 -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" class="img-responsive">
+        </a>
+        <ul class="navbar-nav mr-auto">
+          <form class="form-inline search-form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid no-padding">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-main">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarmenu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="sign-in.html">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-info my-2 my-sm-0" href="sign-up.html">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="mini-headline">
+        <div class="container">
+          <p>Selamat datang di website kami</p>
+        </div>
+      </div>
+      <div class="content-area signin-area">
+        <div class="login-box">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="text-center text-white mb-4">Masuk ke Akun</h2>
+                <div class="row">
+                  <div class="col-md-6 mx-auto">
+                    <div class="card login-card rounded-0">
+                      <div class="card-header header-login">
+                        <h3 class="mb-0">Masuk</h3>
+                      </div>
+                      <div class="card-body">
+                        <form class="form" role="form" autocomplete="off" id="formlogin" novalidate="" method="POST">
+                          <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control form-control-lg rounded-0" name="username" id="username" required="">
+                            <div class="invalid-feedback">Masukan username anda</div>
+                          </div>
+                          <div class="form-group">
+                            <label>Kata Sandi</label>
+                            <input type="password" class="form-control form-control-lg rounded-0" id="password" required="" autocomplete="password">
+                            <div class="invalid-feedback">Masukan kata sandi anda</div>
+                          </div>
+                          <button type="submit" class="btn btn-login btn-lg float-right" id="btnlogin">Masuk</button>
+                          <a href="#" class="forgot-btn">Lupa kata sandi ?</a>
+                          <div class="try-learning">
+                            <a href="sign-up.html">Coba Rumah Pengembangan secara gratis</a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <h5>Hubungi Kami</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Hubungi Kami</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Liputan Pers</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Karir</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Menjadi Instruktur</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <h5>Produk</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Rencana Kami</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Solusi Bisnis</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Solusi Akademi</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Solusi Pemerintahan</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <h5>Peta Situs</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Peta Situs</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Kebijakan Privasi</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Syarat dan Penggunaan</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Kebijakan Cookie</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <h5>Bantuan</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Bantuan</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Kontak Kami</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Umpan Balik Situs</a></li>
+            </ul>
+          </div>
+          </hr>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            <img src="img/logo.png" class="img-responsive">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            <p>Ruko Pondok Cabe Mutiara Blok B 16, Tangerang Selatan</p>
+            <small>Hak Cipta © 2018 - Rumah Pengembangan. Hak cipta dilindungi undang-undang.</small>
+          </div>
+          </hr>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery JS -->
+    <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Pace -->
+    <script type="text/javascript" src="plugins/pace/pace.min.js"></script>
+  </body>
+</html>
