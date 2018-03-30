@@ -33,6 +33,10 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <!-- CSS For Video Viewer -->
+  <link href="<?php echo base_url() ?>assets/css/video-js.css" rel="stylesheet">
+
   <!-- jQuery 3 -->
   <script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
   <!-- jQuery UI 1.11.4 -->
@@ -336,6 +340,11 @@
   });
 
 </script>
+
+<!-- JS for video viewer -->
+<script src="<?php echo base_url() ?>assets/js/videojs-ie8.min.js"></script>
+<script src="<?php echo base_url() ?>assets/js/video.js"></script>
+
 
 </body>
 </html>
