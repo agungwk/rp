@@ -141,17 +141,15 @@ label.star:before {
                                 $exVal = explode(".", $value->file);
                                 if(end($exVal) == "avi" || end($exVal) == "mp4"){
                                ?>
-                               <video width="100%" height="500px" controls>
-                                  <source src="<?=base_url() ?>assets/file/modul/<?=$value->file ?>" type="video/mp4">
+
+                               <video id="my-video" class="video-js" controls preload="auto" width="1155" height="500" data-setup="{}"> <source src="<?=base_url() ?>assets/file/modul/<?=$value->file ?>">
+                               </video>
                                <?php }else{ ?>
 
                                <!-- Materi Pdf -->
                                 <div id="pdf"></div>
                                <?php } ?>
-                             
-                                
-                              </video>
-                                
+                                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
