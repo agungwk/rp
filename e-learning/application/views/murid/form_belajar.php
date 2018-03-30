@@ -43,6 +43,20 @@ label.star:before {
   font-family: FontAwesome;
 }
 </style>
+
+<!-- CSS For PDF Object -->
+<style>
+.pdfobject-container {
+  width: 100%;
+  height: 100%;
+}
+.pdfobject { border: solid 1px #666; }
+#results { padding: 1rem; }
+.hidden { display: none; }
+.success { color: #4F8A10; background-color: #DFF2BF; }
+.fail { color: #D8000C; background-color: #FFBABA; }
+</style>
+
 <!-- Main content -->
 
     <section class="content">
@@ -130,7 +144,9 @@ label.star:before {
                                <video width="100%" height="500px" controls>
                                   <source src="<?=base_url() ?>assets/file/modul/<?=$value->file ?>" type="video/mp4">
                                <?php }else{ ?>
-                                <iframe style="margin: 0 auto;display:block;width: 100%;height: 500px;text-align: center;" src="<?=base_url() ?>assets/file/modul/<?=$value->file ?>?rel=0" align="center" id="frame"></iframe>
+
+                               <!-- Materi Pdf -->
+                                <div id="pdf"></div>
                                <?php } ?>
                              
                                 
@@ -208,5 +224,20 @@ label.star:before {
 </div><!-- /.modal -->
 <!-- End Bootstrap modal -->
 
-
-
+<!-- Javascript for object -->
+<script src="<?php echo base_url() ?>assets/js/pdfobject.min.js"></script>
+<script>
+var options = {
+  pdfOpenParams: {
+    pagemode: "thumbs",
+    navpanes: 0,
+    toolbar: 0,
+    statusbar: 0,
+    view: "FitV"
+  }
+};
+var myPDF = PDFObject.embed("<?=base_url() ?>assets/file/modul/<?=$value->file ?>", "#pdf", options);
+var el = document.querySelector("#results");
+el.setAttribute("class", (myPDF) ? "success" : "fail");
+el.innerHTML = (myPDF) ? "PDFObject successfully added an &lt;embed> element to the page!" : "Uh-oh, the embed didn't work.";
+</script>
